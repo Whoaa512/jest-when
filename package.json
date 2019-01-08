@@ -3,12 +3,13 @@
   "version": "2.2.0",
   "description": "An extension lib for jest",
   "license": "MIT",
-  "main": "src/when.js",
+  "main": "./build/index.cjs.js",
   "scripts": {
     "test": "jest",
     "lint": "eslint src/",
     "lint.fix": "eslint src/ --fix",
-    "stryker": "stryker run"
+    "stryker": "stryker run",
+    "build": "rollup --config"
   },
   "repository": {
     "type": "git",
@@ -23,6 +24,8 @@
     "expect": "^22.4.3"
   },
   "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
     "eslint": "^4.19.1",
     "eslint-config-standard": "^11.0.0",
     "eslint-plugin-import": "^2.12.0",
@@ -31,6 +34,10 @@
     "eslint-plugin-standard": "^3.1.0",
     "jest": "^22.1.1",
     "pre-commit": "^1.2.2",
+    "rollup": "^1.0.2",
+    "rollup-plugin-babel": "^4.2.0",
+    "rollup-plugin-commonjs": "^9.2.0",
+    "rollup-plugin-node-resolve": "^4.0.0",
     "stryker": "^0.24.0",
     "stryker-api": "^0.17.1",
     "stryker-html-reporter": "^0.14.1",

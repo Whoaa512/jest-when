@@ -3,5 +3,6 @@ node_modules
 coverage
 package-lock.json
 reports
+build
 .stryker-tmp/
 /.idea
