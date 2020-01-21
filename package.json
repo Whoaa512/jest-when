@@ -20,7 +20,7 @@
   ],
   "dependencies": {
     "bunyan": "^1.8.12",
-    "expect": "^22.4.3"
+    "expect": "^23.0.0"
   },
   "devDependencies": {
     "eslint": "^4.19.1",
